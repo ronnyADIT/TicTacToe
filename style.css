@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.lex {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+}
+.lexb {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+}
+
+.header {
+    width: 100vw;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: row;
+    min-height: 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+.title {
+    font-size: clamp(20px, 10vw, 80px);
+    font-family: Garamond;
+}
+.restart-container {
+    aspect-ratio: 5/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.restart-container>button {
+    font-size: 20px;
+    background-color: #0c0c0c;
+    color: #fefefe;
+    padding: 5px 10px;
+    border-radius: 64px;
+    border: 2px solid black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.game_cont {
+    display: flex;
+    /* background-color: aqua; */
+    width: 100vw;
+    height: calc(100vh - 100px - 90px);
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.game {
+    height: auto;
+    width: auto;
+    aspect-ratio: 1/1;
+    background-color: #0a0a0a;
+    aspect-ratio: 1 / 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+    box-shadow: 0 0 50px 10px #0c0c0c1a;
+    color: black;
+}
+.tile {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: min(33vw, calc((90vh - 150px)/3));
+    font-size: min(33vw, calc((90vh - 150px)/3));
+    aspect-ratio: 1/ 1;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    overflow: hidden;
+}
+
+.message-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.winMessage {
+    width: 80vw;
+    font-size: 40px;
+    font-family: garamond;
+    color: black;
+    text-align: center;
+}
