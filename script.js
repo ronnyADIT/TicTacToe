@@ -70,7 +70,7 @@ function checkWinOrTie() {
         isGameActive = false;
     }
     else if (!board.includes('')) {
-        winMessage.innerText = "Tie";
+        winMessage.innerText = "It Is A Tie!";
         restart.disabled = false;
     }
 };
